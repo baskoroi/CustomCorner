@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		CCA96A19253E8B33007352BD /* CustomRoundedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA96A17253E8B33007352BD /* CustomRoundedFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCA96A21253E8B96007352BD /* CustomRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA96A20253E8B96007352BD /* CustomRounded.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CCA96A14253E8B33007352BD /* CustomRoundedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomRoundedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA96A17253E8B33007352BD /* CustomRoundedFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomRoundedFramework.h; sourceTree = "<group>"; };
 		CCA96A18253E8B33007352BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCA96A20253E8B96007352BD /* CustomRounded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRounded.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				CCA96A17253E8B33007352BD /* CustomRoundedFramework.h */,
+				CCA96A20253E8B96007352BD /* CustomRounded.swift */,
 				CCA96A18253E8B33007352BD /* Info.plist */,
 			);
 			path = CustomRoundedFramework;
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					CCA96A13253E8B33007352BD = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA96A21253E8B96007352BD /* CustomRounded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		CCA96A1D253E8B33007352BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FY2C2X47F9;
@@ -269,6 +275,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CustomRoundedFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -277,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.baski.protos.CustomRoundedFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +293,7 @@
 		CCA96A1E253E8B33007352BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FY2C2X47F9;
@@ -293,6 +302,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CustomRoundedFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
